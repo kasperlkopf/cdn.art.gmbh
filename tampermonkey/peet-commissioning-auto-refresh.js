@@ -9,7 +9,7 @@
 
 window.alert = (msg) => console.log(msg)
 
-;(function() {
+(function() {
   'use strict'
 
   let checkBtn

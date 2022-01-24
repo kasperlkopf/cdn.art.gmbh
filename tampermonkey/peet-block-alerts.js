@@ -7,7 +7,7 @@
 // @grant        none
 // ==/UserScript==
 
-;(function() {
+(function() {
   'use strict'
 
   window.alert = (msg) => {

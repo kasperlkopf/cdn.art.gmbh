@@ -1,6 +1,6 @@
 /**
  * Name: salesorderposdetails.js
- * Path: /ART/ie50/Sales/SalesOrders/SalesOrderPosDetails/SalesOrderPosDetails.aspx // SalesOrderPosDetails1.aspx
+ * Path: /ART/ie50/Sales/SalesOrders/SalesOrderPosDetails/SalesOrderPosDetails1.aspx
  * Mod: <script type="text/javascript" src="https://kasperlkopf.github.io/mf/salesorderposdetails.js"></script>
  */
 

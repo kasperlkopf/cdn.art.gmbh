@@ -1,7 +1,7 @@
 /**
  * Name: overdueordersmain.js
  * Path: /ART/ie50/Purchase/OrderReminder/OverdueOrders/OverdueOrdersMain.aspx
- * Mod: <script src="https://kasperlkopf.github.io/mf/overdueordersmain.js"></script>
+ * Mod: <script type="text/javascript" src="https://kasperlkopf.github.io/mf/overdueordersmain.js"></script>
  */
 
 (function() {

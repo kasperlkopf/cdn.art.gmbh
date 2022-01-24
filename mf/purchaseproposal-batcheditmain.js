@@ -1,7 +1,7 @@
 /**
  * Name: purchaseproposal-batcheditmain.js
  * Path: /ART/ie50/Purchase/PurchaseProposal/BatchEdit/BatchEditMain.aspx
- * Mod: <script src="https://kasperlkopf.github.io/mf/purchaseproposal-batcheditmain.js"></script>
+ * Mod: <script type="text/javascript" src="https://kasperlkopf.github.io/mf/purchaseproposal-batcheditmain.js"></script>
  */
 
 function gbConfirmYesNo(sMsg) {

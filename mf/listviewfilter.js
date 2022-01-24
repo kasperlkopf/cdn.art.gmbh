@@ -1,7 +1,7 @@
 /**
  * Name: listviewfilter.js
  * Path: /ART/ie50/system/search/listviewfilter/listviewfilter.aspx
- * Mod: <script src="https://kasperlkopf.github.io/mf/listviewfilter.js"></script>
+ * Mod: <script type="text/javascript" src="https://kasperlkopf.github.io/mf/listviewfilter.js"></script>
  */
 
 (function() {

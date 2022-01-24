@@ -1,7 +1,7 @@
 /**
  * Name: purchaseorders-fastordersmain.js
  * Path: /ART/ie50/Purchase/PurchaseOrders/FastOrders/FastOrdersMain.aspx
- * Mod: <script src="https://kasperlkopf.github.io/mf/purchaseorders-fastordersmain.js"></script>
+ * Mod: <script type="text/javascript" src="https://kasperlkopf.github.io/mf/purchaseorders-fastordersmain.js"></script>
  */
 
 (function() {

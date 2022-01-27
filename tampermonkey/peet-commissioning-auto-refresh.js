@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PEET Commissioning Auto Refresh
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @author       Manuel
 // @match        https://mf.artgmbh.com/ART/ie50/AddOn/ppit/PEETLogistics/Commissioning/PEETCommissioning.aspx*
 // @grant        none
@@ -38,7 +38,7 @@ window.alert = (msg) => console.log(msg)
   function start() {
     console.log('start')
 
-    counter = 60
+    counter = 120
     tick()
   }
 
@@ -53,7 +53,7 @@ window.alert = (msg) => console.log(msg)
 
       checkBtn.click()
       reset()
-      timeout = setTimeout(start, 20000)
+      timeout = setTimeout(start, 30000)
     }
   }
 

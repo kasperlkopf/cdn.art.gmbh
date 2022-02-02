@@ -1,7 +1,7 @@
 /**
  * Name: salesorders-fastordersmain.js
  * Path: /ART/ie50/Sales/SalesOrders/FastOrders/FastOrdersMain.aspx
- * Mod: <script type="text/javascript" src="https://kasperlkopf.github.io/mf/salesorders-fastordersmain.js"></script>
+ * Mod: <script type="text/javascript" src="https://cdn.art.gmbh/mf/salesorders-fastordersmain.js"></script>
  */
 
 (function() {

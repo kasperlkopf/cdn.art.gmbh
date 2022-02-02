@@ -1,7 +1,7 @@
 /**
  * Name: baseeditmain.js
  * Path: /ART/ie50/Base/BaseEditMain.aspx
- * Mod: <script type="text/javascript" src="https://kasperlkopf.github.io/mf/baseeditmain.js"></script>
+ * Mod: <script type="text/javascript" src="https://cdn.art.gmbh/mf/baseeditmain.js"></script>
  */
 
 (function() {

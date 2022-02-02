@@ -1,7 +1,7 @@
 /**
  * Name: salesorderposdetails.js
  * Path: /ART/ie50/Sales/SalesOrders/SalesOrderPosDetails/SalesOrderPosDetails1.aspx
- * Mod: <script type="text/javascript" src="https://kasperlkopf.github.io/mf/salesorderposdetails.js"></script>
+ * Mod: <script type="text/javascript" src="https://cdn.art.gmbh/mf/salesorderposdetails.js"></script>
  */
 
 (function() {

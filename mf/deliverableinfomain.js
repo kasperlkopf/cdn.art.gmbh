@@ -1,7 +1,7 @@
 /**
  * Name: deliverableinfomain.js
  * Path: /ART/ie50/Purchase/Info/DeliverableInfo/DeliverableInfoMain.aspx
- * Mod: <script type="text/javascript" src="https://kasperlkopf.github.io/mf/deliverableinfomain.js"></script>
+ * Mod: <script type="text/javascript" src="https://cdn.art.gmbh/mf/deliverableinfomain.js"></script>
  */
 
 (function() {

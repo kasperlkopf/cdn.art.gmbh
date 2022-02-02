@@ -1,7 +1,7 @@
 /**
  * Name: productsupplierdetails.js
  * Path: /ART/ie50/base/products/productsupplierdetails/ProductSupplierDetails.aspx
- * Mod: <script type="text/javascript" src="https://kasperlkopf.github.io/mf/productsupplierdetails.js"></script>
+ * Mod: <script type="text/javascript" src="https://cdn.art.gmbh/mf/productsupplierdetails.js"></script>
  */
 
 (function() {

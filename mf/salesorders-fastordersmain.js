@@ -66,7 +66,7 @@
 
   function beforeSave() {
     checkEverything();
-    // checkForDuplicates();
+    checkForDuplicates();
   }
 
   function checkEverything() {

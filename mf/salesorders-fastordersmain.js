@@ -369,13 +369,12 @@
       var customerNumberInput = document.getElementById('txtCustomerIDExt');
 
       if (referenceInput && customerNumberInput) {
+        var orderNumber = document.getElementById('txtOrderNumber').value;
         var referenceText = referenceInput.value;
         var customerNumber = customerNumberInput.value;
-        var orderNumber = document.getElementById('txtOrderNumber').value;
-        var isNewOC = orderNumber.indexOf('*neu*') > -1;
 
         if (referenceText && customerNumber) {
-          var url = 'https://api.art.gmbh/check-for-duplicates?referenceText=' + referenceText + '&customerNumber=' + customerNumber + '&t=' + new Date().getTime();
+          var url = 'https://api.art.gmbh/myfactory/check-for-duplicates?orderNumber=' + orderNumber + '&referenceText=' + referenceText + '&customerNumber=' + customerNumber + '&t=' + new Date().getTime();
 
           getApi(url, function(res) {
             if (res) {

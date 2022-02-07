@@ -60,7 +60,7 @@
     checkReference();
 
     if (!window.duplicateWarningConfirmed) {
-      // checkForDuplicates();
+      checkForDuplicates();
     }
   }
 

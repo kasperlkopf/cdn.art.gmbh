@@ -379,7 +379,7 @@
         var referenceText = referenceInput.value;
         var customerNumber = customerNumberInput.value;
 
-        if (referenceText && customerNumber) {
+        if (orderNumber && referenceText && customerNumber) {
           var url = 'https://api.art.gmbh/mf/check-for-duplicates?orderNumber=' + orderNumber + '&referenceText=' + referenceText + '&customerNumber=' + customerNumber + '&t=' + new Date().getTime();
 
           getApi(url, function(res) {

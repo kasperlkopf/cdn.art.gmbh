@@ -60,13 +60,13 @@
     checkReference();
 
     if (!window.duplicateWarningConfirmed) {
-      checkForDuplicates();
+      // checkForDuplicates();
     }
   }
 
   function beforeSave() {
     checkEverything();
-    checkForDuplicates();
+    // checkForDuplicates();
   }
 
   function checkEverything() {

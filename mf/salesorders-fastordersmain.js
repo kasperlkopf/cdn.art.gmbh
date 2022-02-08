@@ -56,6 +56,9 @@
   // before save
   window.mFrontendEventBeforeSave = beforeSave;
 
+  // after save
+  window.mFrontendEventAfterSave = afterSave;
+
   function onReferenceInputBlur() {
     checkReference();
 
@@ -66,6 +69,9 @@
 
   function beforeSave() {
     checkEverything();
+  }
+
+  function afterSave() {
     checkForDuplicates();
   }
 
@@ -377,7 +383,6 @@
           var url = 'https://api.art.gmbh/mf/check-for-duplicates?orderNumber=' + orderNumber + '&referenceText=' + referenceText + '&customerNumber=' + customerNumber + '&t=' + new Date().getTime();
 
           getApi(url, function(res) {
-            return
             if (res) {
               var confirmed = confirm('Achtung!\n\nEs gibt einen ähnlichen Beleg für diesen Kunden (' + customerNumber + '):\n\n' + res + '\nBitte überprüfen. Danke.');
 

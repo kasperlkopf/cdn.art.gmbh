@@ -63,7 +63,7 @@
     checkReference();
 
     if (!window.duplicateWarningConfirmed) {
-      checkForDuplicates();
+      // checkForDuplicates();
     }
   }
 
@@ -367,7 +367,16 @@
     cmdPositions.parentElement.insertBefore(detailsButton, cmdPositions);
   }
 
+  var isCheckingForDuplicates = false;
+  var duplicateWarningConfirmed = false;
+
   function checkForDuplicates() {
+    if (isCheckingForDuplicates || duplicateWarningConfirmed) {
+      return;
+    }
+
+    isCheckingForDuplicates = true;
+
     var orderType = document.getElementById('txtOrderTypeDesc').value;
 
     if (orderType === 'Auftragsbestätigung' || orderType === 'Rahmenauftrag') {
@@ -387,9 +396,11 @@
               var confirmed = confirm('Achtung!\n\nEs gibt einen ähnlichen Beleg für diesen Kunden (' + customerNumber + '):\n\n' + res + '\nBitte überprüfen. Danke.');
 
               if (confirmed) {
-                window.duplicateWarningConfirmed = true;
+                duplicateWarningConfirmed = true;
               }
             }
+
+            isCheckingForDuplicates = false;
           });
         }
       }

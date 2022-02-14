@@ -407,8 +407,6 @@
     }
   }
 
-  window.checkForDuplicates = checkForDuplicates;
-
   function getApi(url, callback) {
     var xdr = new XDomainRequest(); // XMLHttpRequest();
 
@@ -422,7 +420,5 @@
 
     xdr.send();
   }
-
-  window.getApi = getApi;
 
 })();

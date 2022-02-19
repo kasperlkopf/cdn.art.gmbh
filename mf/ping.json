@@ -1,3 +1,4 @@
 {
-  "status": "OK"
+  "status": 200,
+  "message": "OK"
 }

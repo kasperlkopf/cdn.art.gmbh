@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         ProductPrices
+// @name         myfactory ProductPrices
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      20220311-0
 // @description  Automatically opens product price list
 // @author       Manuel
 // @match        https://mf.artgmbh.com/ART_PP/ie50/Base/Products/Prices/ProductPrices.aspx?EditName=BaseProducts*
@@ -17,4 +17,5 @@
 
   // Clear standard price
   document.querySelector('#txtPrice_R0').value = '';
+
 })();

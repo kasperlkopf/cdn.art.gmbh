@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name         PEET Commissioning Auto Refresh
 // @namespace    http://tampermonkey.net/
-// @version      20222701-1
+// @version      20222701-0
+// @description  Automatically refreshes the commissioning page
 // @author       Manuel
 // @match        https://mf.artgmbh.com/ART/ie50/AddOn/ppit/PEETLogistics/Commissioning/PEETCommissioning.aspx*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=artgmbh.com
 // @grant        none
 // ==/UserScript==
 

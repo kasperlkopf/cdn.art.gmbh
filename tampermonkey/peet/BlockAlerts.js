@@ -1,9 +1,11 @@
 // ==UserScript==
-// @name         Block alerts in PEET
+// @name         PEET Block Alerts
 // @namespace    http://tampermonkey.net/
-// @version      20220127-1
+// @version      20220127-0
+// @description  Replaces alerts in PEET with a custom toast
 // @author       Manuel
 // @match        https://mf.artgmbh.com/Logistik/CreateDelivery
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=artgmbh.com
 // @grant        none
 // ==/UserScript==
 
@@ -17,6 +19,7 @@
                   </div>`;
 
     document.body.innerHTML += alert;
+
     setTimeout(() => document.querySelector('[id^="alert-"]').remove(), 4000);
   }
 

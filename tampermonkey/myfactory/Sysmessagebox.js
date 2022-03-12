@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         myfgactory Sysmessagebox Autoconfirm
+// @name         myfactory Sysmessagebox Autoconfirm
 // @namespace    http://tampermonkey.net/
 // @version      20220311-0
 // @description  Automatically confirms the sysmessagebox

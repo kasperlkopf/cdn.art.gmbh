@@ -1,0 +1,33 @@
+{
+  "name": "manufactory",
+  "description": "myfactory mit Sinn",
+  "author": "Manuel Sinn",
+  "version": "2022.0320.1150",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/icon16.png",
+      "32": "/images/icon32.png",
+      "48": "/images/icon48.png",
+      "128": "/images/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/icon16.png",
+    "32": "/images/icon32.png",
+    "48": "/images/icon48.png",
+    "128": "/images/icon128.png"
+  },
+  "content_scripts": [
+   {
+     "matches": ["https://app.art.gmbh/*"],
+     "css": ["style.css"],
+     "js": ["content-script.js"]
+   }
+ ]
+}

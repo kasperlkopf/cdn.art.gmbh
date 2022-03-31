@@ -48,7 +48,7 @@
   }
 
   // set new order
-  window.mFrontendEventSetNewOrder = checkEverything;
+  window.mFrontendEventSetNewOrder = setNewOrder;
 
   // enable controls
   window.mFrontendEventEnableControls = checkEverything;
@@ -65,6 +65,11 @@
     if (!window.duplicateWarningConfirmed) {
       // checkForDuplicates();
     }
+  }
+
+  function setNewOrder() {
+    resetReference();
+    checkEverything();
   }
 
   function beforeSave() {
@@ -112,6 +117,21 @@
       var txt = contactNameInput.value ? 'Zu Händen Text' : 'Zu Händen Text <small class="red-circle">🔴</small>';
 
       contactNameLabel.innerHTML = txt;
+    }
+  }
+
+  function resetReference() {
+    var orderType = document.getElementById('txtOrderTypeDesc').value;
+
+    if (orderType === 'Auftragsbestätigung') {
+      var orderNumber = document.getElementById('txtOrderNumber').value;
+      var isNewOC = orderNumber.indexOf('*neu*') > -1;
+
+      if (isNewOC) {
+        var referenceInput = document.getElementById('txtReferenceText');
+
+        referenceInput.value = '';
+      }
     }
   }
 

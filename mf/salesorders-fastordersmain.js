@@ -435,13 +435,13 @@
   function getApi(url, callback) {
     var xdr = new XDomainRequest(); // XMLHttpRequest();
 
+    xdr.open('GET', url);
+
     xdr.onload = function() {
       if (callback) {
         callback(xdr.responseText)
       }
     }
-
-    xdr.open('GET', url);
 
     xdr.send();
   }

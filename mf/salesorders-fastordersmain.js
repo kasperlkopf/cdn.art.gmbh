@@ -51,7 +51,7 @@
   window.mFrontendEventSetNewOrder = setNewOrder;
 
   // enable controls
-  window.mFrontendEventEnableControls = checkEverything;
+  window.mFrontendEventEnableControls = enableControls;
 
   // before save
   window.mFrontendEventBeforeSave = beforeSave;
@@ -65,6 +65,11 @@
     if (!window.duplicateWarningConfirmed) {
       // checkForDuplicates();
     }
+  }
+
+  function enableControls() {
+    resetReference();
+    checkEverything();
   }
 
   function setNewOrder() {

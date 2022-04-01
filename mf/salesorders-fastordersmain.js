@@ -73,7 +73,7 @@
   }
 
   function setNewOrder() {
-    // resetReference();
+    resetReference();
     checkEverything();
   }
 
@@ -125,7 +125,13 @@
     }
   }
 
+  var referenceReset = false;
+
   function resetReference() {
+    if (referenceReset) {
+      return;
+    }
+
     var orderType = document.getElementById('txtOrderTypeDesc').value;
 
     if (orderType === 'Auftragsbestätigung') {
@@ -136,6 +142,7 @@
         var referenceInput = document.getElementById('txtReferenceText');
 
         referenceInput.value = '';
+        referenceReset = true;
       }
     }
   }

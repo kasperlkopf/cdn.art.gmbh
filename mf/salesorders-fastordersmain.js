@@ -74,7 +74,6 @@
 
   function setNewOrder() {
     // resetReference();
-
     checkEverything();
   }
 

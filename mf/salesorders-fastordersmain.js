@@ -59,7 +59,11 @@
   // after save
   window.mFrontendEventAfterSave = afterSave;
 
+  var hasReference = false;
+
   function onReferenceInputBlur() {
+    hasReference = true;
+
     checkReference();
 
     if (!window.duplicateWarningConfirmed) {
@@ -73,7 +77,7 @@
   }
 
   function setNewOrder() {
-    // resetReference();
+    resetReference();
     checkEverything();
   }
 
@@ -128,7 +132,7 @@
   var referenceReset = false;
 
   function resetReference() {
-    if (referenceReset) {
+    if (referenceReset && hasReference) {
       return;
     }
 

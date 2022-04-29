@@ -136,11 +136,7 @@
   var referenceReset = false;
 
   function resetReference() {
-    var currentReference = document.getElementById('txtReferenceText').value;
-
-    alert(currentReference + ' vs. ' + originalReference);
-
-    if (referenceReset && hasReference && currentReference !== originalReference) {
+    if (referenceReset && hasReference) {
       return;
     }
 

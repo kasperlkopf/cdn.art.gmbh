@@ -141,7 +141,7 @@
     alert(currentReference + ' vs. ' + originalReference);
 
     if (referenceReset && hasReference && currentReference !== originalReference) {
-      return false;
+      return;
     }
 
     var orderType = document.getElementById('txtOrderTypeDesc').value;

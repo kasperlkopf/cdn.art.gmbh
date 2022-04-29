@@ -59,7 +59,6 @@
   // after save
   window.mFrontendEventAfterSave = afterSave;
 
-  var originalReference = document.getElementById('txtReferenceText').value;
   var hasReference = false;
 
   function onReferenceInputBlur() {
@@ -136,7 +135,7 @@
   var referenceReset = false;
 
   function resetReference() {
-    if (referenceReset && hasReference) {
+    if (referenceReset && hasReference && document.getElementById('txtReferenceText').value.indexOf('WS2') !== 0) {
       return;
     }
 

@@ -134,7 +134,6 @@
 
   var referenceReset = false;
 
-
   function resetReference() {
     if (referenceReset && hasReference && document.getElementById('txtReferenceText').value.indexOf('WS2') !== 0) {
       return;

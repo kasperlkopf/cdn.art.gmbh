@@ -138,6 +138,8 @@
   function resetReference() {
     var currentReference = document.getElementById('txtReferenceText').value;
 
+    alert(currentReference + ' vs. ' + originalReference);
+
     if (referenceReset && hasReference && currentReference !== originalReference) {
       return;
     }

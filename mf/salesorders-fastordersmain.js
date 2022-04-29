@@ -117,6 +117,7 @@
     }
 
     checkContactName();
+    resetReference();
     checkReference();
   }
 

@@ -96,6 +96,8 @@
       checkContactId();
       checkDeliveryDates();
       updateOrderInfo();
+    } else if (orderType === 'Angebot') {
+      updateOrderInfo();
     }
 
     checkPaymentConditions();
@@ -384,7 +386,13 @@
         var isEnglish = document.getElementById('txtFooterText').value.indexOf('Thank you') > -1;
         var subjectLine = isEnglish ? 'Order Confirmation ' + orderNumber + ' · Your Reference: ' + referenceText : 'Auftragsbestätigung ' + orderNumber + ' · Ihre Referenz: ' + referenceText;
 
-        txtitchOrderInfoRow.value = subjectLine;
+        txtitchOrderInfoRow.value = 'A.R.T. · ' + subjectLine;
+      }
+    } else if (orderType === 'Angebot') {
+      var txtitchOrderInfoRow = document.getElementById('txtitchOrderInfoRow');
+
+      if (txtitchOrderInfoRow.value.indexOf('A.R.T. · ') === -1) {
+        txtitchOrderInfoRow.value = 'A.R.T. · ' + txtitchOrderInfoRow.value;
       }
     }
   }

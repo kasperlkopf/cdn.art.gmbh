@@ -395,6 +395,7 @@
 
       subjectText = subjectText.replace(/00000/g, 'N.N.');
       subjectText = subjectText.replace(/00001/g, 'N.N.');
+      subjectText = subjectText.replace(/00002/g, 'N.N.');
 
       if (subjectText.indexOf('A.R.T. · ') === -1) {
         txtitchOrderInfoRow.value = 'A.R.T. · ' + subjectText;

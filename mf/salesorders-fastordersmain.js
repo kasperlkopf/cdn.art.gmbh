@@ -391,7 +391,7 @@
       }
     } else if (orderType === 'Angebot') {
       var txtitchOrderInfoRow = document.getElementById('txtitchOrderInfoRow');
-      var subjectText = txtitchOrderInfoRow.value.replace('00000', 'N.N.');
+      var subjectText = txtitchOrderInfoRow.value.replace(/00000/g, 'N.N.');
 
       if (subjectText.indexOf('A.R.T. · ') === -1) {
         txtitchOrderInfoRow.value = 'A.R.T. · ' + subjectText;

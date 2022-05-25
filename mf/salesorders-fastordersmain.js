@@ -393,8 +393,8 @@
       var txtitchOrderInfoRow = document.getElementById('txtitchOrderInfoRow');
       var subjectText = txtitchOrderInfoRow.value.replace(/ 00000 /g, 'N.N.');
 
-      if (txtitchOrderInfoRow.value.indexOf('A.R.T. · ') === -1) {
-        txtitchOrderInfoRow.value = 'A.R.T. · ' + txtitchOrderInfoRow.value;
+      if (subjectText.indexOf('A.R.T. · ') === -1) {
+        txtitchOrderInfoRow.value = 'A.R.T. · ' + subjectText;
       }
     }
   }

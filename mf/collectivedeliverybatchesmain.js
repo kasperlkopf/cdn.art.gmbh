@@ -26,7 +26,12 @@
    }
 
    function init() {
+     document.getElementById('chkBatchPrint').disabled = true;
+     document.getElementById('chkStock').disabled = true;
+     document.getElementById('cmdCheckAll').disabled = true;
+
      window.mOnUnCheckAll();
+
      checkCommissioningStatus();
      handleMousemoves()
    }

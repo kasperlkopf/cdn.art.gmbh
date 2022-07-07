@@ -66,7 +66,6 @@
            checkbox.click();
          }
 
-
          checkbox.checked = false;
          checkbox.disabled = true;
        }

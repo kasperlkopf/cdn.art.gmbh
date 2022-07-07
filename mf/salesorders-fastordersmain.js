@@ -244,6 +244,16 @@
     return deliveryDate < documentDate;
   }
 
+  function lockPosTexts() {
+    var posTexts = document.getElementsByClassName('clsEditHTML');
+
+    for (var i = 0; i < posTexts.length; i++) {
+      posTexts[i].contentEditable = false;
+    }
+  }
+
+  window.lockPosTexts = lockPosTexts;
+
   function addCustomCSS() {
     var style = document.createElement('style');
     var css = '.invalid { border: 3px solid #f00; } .red-circle { color: #f00; }';

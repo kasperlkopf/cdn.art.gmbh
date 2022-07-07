@@ -245,10 +245,14 @@
   }
 
   function lockPosTexts() {
-    var posTexts = document.getElementsByClassName('clsEditHTML');
+    var posTexts = document.getElementsByTagName('div');
 
     for (var i = 0; i < posTexts.length; i++) {
-      posTexts[i].contentEditable = false;
+      if (posTexts[i].id === 'divList_lstPositions_PosText') {
+        posTexts[i].contentEditable = false;
+        posTexts[i].onactivate = false;
+        posTexts[i].ondeactivate = false;
+      }
     }
   }
 

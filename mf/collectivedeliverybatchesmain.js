@@ -60,8 +60,11 @@
          }
        }
 
-       if (commissionedQuantity !== '' && checkbox.checked) {
-         checkbox.click();
+       if (commissionedQuantity !== '') {
+         if (checkbox.checked) {
+           checkbox.click();
+         }
+
          checkbox.checked = false;
          checkbox.disabled = true;
        }

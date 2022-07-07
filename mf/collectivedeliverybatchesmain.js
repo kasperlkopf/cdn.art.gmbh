@@ -26,6 +26,7 @@
    }
 
    function init() {
+     window.mOnUnCheckAll();
      checkCommissioningStatus();
      handleMousemoves()
    }

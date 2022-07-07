@@ -46,8 +46,24 @@
        var tableRow = tableRows[i];
        var rowChildren = tableRow.children;
 
-       if (tableRow.style.backgroundColor === '#ffff9a') {
-         tableRow.style.backgroundColor === '#eeeeee';
+       var commissionedQuantity = '';
+       var checkbox = null;
+
+       for (var j = 0; j < rowChildren.length; j++) {
+         var rowChild = rowChildren[j];
+         var colId = rowChild.wfColID;
+
+         if (colId === 'Kommissioniert') {
+           commissionedQuantity = rowChild.innerText;
+         } else if (colId === 'IncludePos') {
+           checkbox = rowChild.getElementsByTagName('input')[0];
+         }
+       }
+
+       if (commissionedQuantity !== '' && checkbox.checked) {
+         checkbox.click();
+         checkbox.checked = false;
+         checkbox.disabled = true;
        }
      }
    }

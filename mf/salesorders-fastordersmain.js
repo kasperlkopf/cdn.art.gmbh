@@ -250,8 +250,8 @@
     for (var i = 0; i < posTexts.length; i++) {
       if (posTexts[i].id === 'divList_lstPositions_PosText') {
         posTexts[i].contentEditable = false;
-        posTexts[i].onactivate = false;
-        posTexts[i].ondeactivate = false;
+        posTexts[i].onactivate = null;
+        posTexts[i].ondeactivate = null;
       }
     }
   }

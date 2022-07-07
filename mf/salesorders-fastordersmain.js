@@ -100,6 +100,7 @@
       updateOrderInfo();
     }
 
+    lockPosTexts();
     checkPaymentConditions();
     checkShippingConditions();
     checkOrderState();

@@ -189,7 +189,12 @@
   }
 
   // delivery date check on focus
-  window.mFrontendEventListViewInputOnFocus = checkDeliveryDates;
+  window.mFrontendEventListViewInputOnFocus = listViewInputFocus;
+
+  function listViewInputFocus() {
+    checkDeliveryDates();
+    lockPosTexts();
+  }
 
   function createPosDetailsButton() {
     var lstPositions = document.getElementById('tblListBody_lstPositions');
@@ -256,8 +261,6 @@
       }
     }
   }
-
-  window.lockPosTexts = lockPosTexts;
 
   function addCustomCSS() {
     var style = document.createElement('style');

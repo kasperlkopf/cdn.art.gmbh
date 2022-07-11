@@ -251,7 +251,7 @@
   }
 
   function lockPosTexts() {
-    var posTexts = document.getElementsByTagName('div');
+    var posTexts = document.getElementById('tblListBody_lstPositions').getElementsByTagName('div');
 
     for (var i = 0; i < posTexts.length; i++) {
       if (posTexts[i].id === 'divList_lstPositions_PosText') {

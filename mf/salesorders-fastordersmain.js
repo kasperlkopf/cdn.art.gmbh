@@ -456,7 +456,7 @@
         var customerNumber = customerNumberInput.value;
 
         if (orderNumber && referenceText && customerNumber) {
-          var url = 'https://api.art.gmbh/mf/check-for-duplicates?orderNumber=' + orderNumber + '&referenceText=' + referenceText + '&customerNumber=' + customerNumber + '&t=' + new Date().getTime();
+          var url = 'https://api.art.gmbh/mf/check-for-duplicates?orderNumber=' + orderNumber + '&referenceText=' + referenceText + '&customerNumber=' + customerNumber + '&msClientId= ' + msClientID + '&ts=' + new Date().getTime();
 
           getApi(url, function(res) {
             if (res !== '') {
